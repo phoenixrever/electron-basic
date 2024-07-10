@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src https://*; child-src 'none';"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World add nodemoon</h1>
+    <button id="btn">click</button>
+
+    <h2>进程间通信</h2>
+
+    <h3>渲染进程向主进程通信(向D盘写文件)</h3>
+    <input type="text" id="input" />
+    <button id="btn2">向D盘写入hello.txt</button>
+    <br />
+    <h3>主进程向渲染进程通信（读出D盘文件）</h3>
+    <button id="btn3">读出D盘hello.txt文件</button>
+
+    <script src="./render.js"></script>
+  </body>
+</html>
